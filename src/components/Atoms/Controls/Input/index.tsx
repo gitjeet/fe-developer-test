@@ -12,14 +12,13 @@ const Input = React.forwardRef<any, CustomInputProps>((props, ref) => {
   const renderVariant = () => {
     switch (type) {
       case "radio":
-        return <RadioInput {...props} />;
+        return <RadioInput {...props} ref={ref} />;
       case "switch":
-        return <SwitchInput {...props} />;
+        return <SwitchInput {...props} ref={ref} />;
       case "dropdown":
-        return <DropdownInput {...props} />;
+        return <DropdownInput {...props} ref={ref} />;
       default:
         return <TextInput {...props} ref={ref} />;
-    }
   };
 
   return (
