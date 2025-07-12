@@ -9,7 +9,12 @@ describe("getSpinnerColors", () => {
   });
 
   it("returns default colors for non‑outline variants", () => {
-    const variants = ["default", "secondary", "destructive", "success"] as const;
+    const variants = [
+      "default",
+      "secondary",
+      "destructive",
+      "success",
+    ] as const;
     variants.forEach((v) =>
       expect(getSpinnerColors(v)).toEqual({
         trackColor: "#ffffff",
