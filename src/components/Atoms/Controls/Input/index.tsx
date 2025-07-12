@@ -6,7 +6,8 @@ import { SwitchInput } from "./SwitchInput";
 import { DropdownInput } from "./DropDownInput";
 import { CustomInputProps } from "./types/types";
 
-const Input = React.forwardRef<any, CustomInputProps>((props, ref) => {
+- const Input = React.forwardRef<any, CustomInputProps>((props, ref) => {
++ const Input = React.forwardRef<HTMLInputElement | HTMLDivElement, CustomInputProps>((props, ref) => {
   const { type, label, tooltip, badge, disabled } = props;
 
   const renderVariant = () => {
