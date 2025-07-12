@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
+    "types": ["jest"],
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
