@@ -24,7 +24,7 @@ const Input = React.forwardRef<any, CustomInputProps>((props, ref) => {
 
   return (
     <InputBase
-      label={label}
+      label={type === "switch" ? undefined : label}
       tooltip={tooltip}
       badge={badge}
       disabled={disabled}
