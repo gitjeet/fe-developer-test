@@ -39,7 +39,7 @@ export const Text: Story = {
     placeholder: "Enter text",
     defaultValue: "Hi theres",
   },
-  render: (args) => <InputWrapper {...args} />,
+  render: (args: any) => <InputWrapper {...args} />,
 };
 
 export const Email: Story = {
@@ -49,7 +49,7 @@ export const Email: Story = {
     label: "Email Input",
     placeholder: "Enter email",
   },
-  render: (args) => <InputWrapper {...args} />,
+  render: (args: any) => <InputWrapper {...args} />,
 };
 
 export const Password: Story = {
@@ -59,7 +59,7 @@ export const Password: Story = {
     label: "Password Input",
     placeholder: "Enter password",
   },
-  render: (args) => <InputWrapper {...args} />,
+  render: (args: any) => <InputWrapper {...args} />,
 };
 
 export const Number: Story = {
