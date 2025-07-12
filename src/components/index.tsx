@@ -4,6 +4,7 @@
 export { BidirectionalSlider } from '@/components/Atoms/Controls/BidirectionalSlider';
 export { BulletSlider } from '@/components/Atoms/Controls/BulletSlider';
 export { default as Button } from '@/components/Atoms/Controls/Button';
+export { Chatbot } from '@/components/Atoms/Controls/FloatingChatbot';
 export { default as Input } from '@/components/Atoms/Controls/Input';
 export { default as Link } from '@/components/Atoms/Controls/Link';
 export { default as RadioButton } from '@/components/Atoms/Controls/RadioButton';
