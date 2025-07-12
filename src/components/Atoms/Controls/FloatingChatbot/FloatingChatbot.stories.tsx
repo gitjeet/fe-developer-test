@@ -75,7 +75,7 @@ export const Default: Story = {
     placeholderText: "Type your message...",
     position: "bottom-right",
     initialOpen: false,
-    onSendMessage: async (message: any) => {
+    onSendMessage: async (message: string) => {
       // Simulate a delay
       await new Promise((resolve) => setTimeout(resolve, 1000));
       return `I received your message: "${message}". This is a demo response.`;

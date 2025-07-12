@@ -4,7 +4,7 @@ import { RegisterOptions } from "react-hook-form";
 export interface CustomChangeEvent {
   target: {
     name: string;
-    value: any;
+    value: string | number | boolean | readonly string[];
     type: string;
   };
 }
