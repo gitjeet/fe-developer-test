@@ -18,7 +18,6 @@ export const SwitchInput = forwardRef<HTMLInputElement, CustomInputProps>(
       defaultValue: props.defaultValue,
     });
 
-    /** business‑logic handler that works with a boolean */
     const handleToggle = (state: boolean) => {
       setValue(name, state, { shouldDirty: true });
       const customEvent: CustomChangeEvent = {
@@ -28,7 +27,6 @@ export const SwitchInput = forwardRef<HTMLInputElement, CustomInputProps>(
       trigger(name);
     };
 
-    /** wrapper that satisfies the native onChange typing */
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) =>
       handleToggle(e.target.checked);
 
@@ -52,7 +50,7 @@ export const SwitchInput = forwardRef<HTMLInputElement, CustomInputProps>(
           checked={checked}
           className={className}
           onChange={handleInputChange}
-          ref={ref} // ✅ forward the ref to the actual input
+          ref={ref}
           {...props}
         />
 

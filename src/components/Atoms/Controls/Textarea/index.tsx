@@ -1,13 +1,11 @@
 import Label from "@/components/Atoms/Data_Display/Label";
+import * as React from "react";
+import { cn } from "@/lib/utils";
 
 interface TextareaComponentProps extends TextareaProps {
   label?: string;
   footnote?: string;
 }
-
-import * as React from "react";
-
-import { cn } from "@/lib/utils";
 
 export interface TextareaProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}

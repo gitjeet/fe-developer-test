@@ -27,7 +27,7 @@ export const RadioInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
         labelClassName="body-2 text-white ml-3"
         onClick={(opt) => handleSelect(opt.value)}
         size="sm"
-        // @ts-ignore — in case your Radio doesn't accept ref, suppress temporarily
+        // @ts-ignore
         ref={ref}
       />
     );
