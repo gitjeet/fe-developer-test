@@ -6,10 +6,19 @@ export const getBidirectionalValue = (
   min: number,
   max: number,
 ) => {
+  // Edge‐case: no span
+  if (origin === min && origin === max) return 0;
+
   if (val <= origin) {
+    // Prevent division by zero when origin === min
+    if (origin === min) return -100;
     const pct = (val - min) / (origin - min);
     return -100 * (1 - pct);
   }
+
+  // Prevent division by zero when origin === max
+  if (origin === max) return 0;
+
   const pct = (val - origin) / (max - origin);
   return 100 * pct;
 };
